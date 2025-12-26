@@ -2,16 +2,19 @@
     "name": "picgo-plugin-cf-imgbed",
     "version": "1.0.0",
     "description": "cf-imgbed",
-    "main": "src/index.js",
+    "main": "index.js",
     "publishConfig": {
         "access": "public"
     },
     "homepage": "",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "patch": "npm version patch && git push origin master && git push origin --tags",
-        "minor": "npm version minor && git push origin master && git push origin --tags",
-        "major": "npm version major && git push origin master && git push origin --tags"
+        "release": "npm run release:patch",
+        "release:patch": "npm version patch",
+        "release:minor": "npm version minor",
+        "release:major": "npm version major",
+        "preversion": "git rev-parse --abbrev-ref HEAD | findstr /C:\"main\" >nul || (echo Error: Must be on main branch to release && exit 1)",
+        "postversion": "git push origin main --tags && echo Successfully pushed version %npm_package_version% to GitHub."
     },
     "keywords": [
         "picgo",
