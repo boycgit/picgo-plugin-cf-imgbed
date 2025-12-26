@@ -1,13 +1,13 @@
 module.exports = (ctx) => {
     const register = () => {
-        ctx.helper.uploader.register('cf-imgbed', {
+        ctx.helper.uploader.register('cf-imgbed-boyc', {
             handle,
-            name: 'cf-imgbed 自定义文件夹和前缀',
+            name: 'cf-imgbed-boyc 自定义文件夹和前缀',
             config: config
         })
     }
     const handle = async function (ctx) {
-        let userConfig = ctx.getConfig('picBed.cf-imgbed')
+        let userConfig = ctx.getConfig('picBed.cf-imgbed-boyc')
         if (!userConfig) {
             throw new Error('Can\'t find uploader config')
         }
@@ -97,7 +97,7 @@ module.exports = (ctx) => {
     }
 
     const config = ctx => {
-        let userConfig = ctx.getConfig('picBed.cf-imgbed')
+        let userConfig = ctx.getConfig('picBed.cf-imgbed-boyc')
         if (!userConfig) {
             userConfig = {}
         }
@@ -161,7 +161,7 @@ module.exports = (ctx) => {
         ]
     }
     return {
-        uploader: 'cf-imgbed',
+        uploader: 'cf-imgbed-boyc',
         register
 
     }

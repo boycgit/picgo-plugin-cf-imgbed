@@ -1,4 +1,4 @@
-# picgo-plugin-cf-imgbed
+# picgo-plugin-cf-imgbed-boyc
 
 plugin for [PicGo](https://github.com/Molunerfinn/PicGo)
 

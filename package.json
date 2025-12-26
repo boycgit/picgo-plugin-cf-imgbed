@@ -1,7 +1,7 @@
 {
-    "name": "picgo-plugin-cf-imgbed",
+    "name": "picgo-plugin-cf-imgbed-boyc",
     "version": "1.0.4",
-    "description": "cf-imgbed",
+    "description": "cf-imgbed-boyc",
     "main": "index.js",
     "publishConfig": {
         "access": "public"
