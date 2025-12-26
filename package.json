@@ -1,6 +1,6 @@
 {
     "name": "picgo-plugin-cf-imgbed",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "cf-imgbed",
     "main": "index.js",
     "publishConfig": {
